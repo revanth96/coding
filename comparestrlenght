@@ -1,0 +1,5 @@
+function isamelength(a,b)
+{
+console.log(a.length==b.length);
+}
+isamelength("reae","rave")
