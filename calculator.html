@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="myDiv">
+        <input type="number" id="a">
+        <input type="number" id="b">
+        <button onclick="sum(a,b)">add</button>
+            <button onclick="sub(a,b)">sub</button>
+            <button onclick="mul(a,b)">mul</button>
+            <button onclick="divi(a,b)">divi</button>
+
+    </div>
+</body>
+<script>
+    function sum(a,b){
+var a1=document.getElementById("a").value;
+var b1=document.getElementById("b").value;
+var sum = parseInt(a1)+parseInt(b1)
+alert(sum)
+document.getElementById("myDiv").innerHtml=sum;} 
+
+function sub(a,b){
+    var a1=document.getElementById("a").value;
+    var b1=document.getElementById("b").value;
+    var sub = parseInt(a1)-parseInt(b1)
+    alert(sub)
+    document.getElementById("myDiv").innerHtml=sub;
+}
+function mul(a,b){
+    var a1=document.getElementById("a").value;
+    var b1=document.getElementById("b").value;
+    var mul=parseInt(a1)*parseInt(b1)
+    alert(mul)
+    document.getElementById("myDiv").innerhtml=mul;
+}
+function divi(a,b){
+var a1=document.getElementById("a").value;
+var b1= document.getElementById("b").value;
+var divi=parseInt(a1)/parseInt(b1)
+alert(divi)
+document.getElementById("myDiv").innerHTML=divi;
+}
+</script>
+</html>
